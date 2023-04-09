@@ -1,0 +1,39 @@
+
+
+.cards{
+
+    height: 580px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 40px;
+   margin-top: 60px;
+}
+
+.cards > img{
+
+   width: 100%;
+}
+
+
+.cards .cardDescription{
+
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  
+}
+
+.cardDescription h2{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cardDescription button{
+
+    width: 300px;
+    height: 60px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}

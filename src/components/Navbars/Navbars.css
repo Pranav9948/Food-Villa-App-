@@ -1,0 +1,42 @@
+.navbars{
+
+    background-color: #000000;
+    color: rgb(197, 192, 192);
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 200px;
+}
+
+
+.navLogo img{
+
+    width: 120px;
+    height: 100px;
+    padding: 10px;
+} 
+
+
+
+.menuItems >ul{
+
+    display: flex;
+   
+   
+    
+}
+
+
+.menuItems >ul >li {
+
+    list-style: none;
+    padding-right: 80px;
+    
+
+}
