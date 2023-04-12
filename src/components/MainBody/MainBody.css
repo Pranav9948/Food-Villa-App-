@@ -1,6 +1,13 @@
 .mainBody{
 
-    padding-top: 150px;
-    display: flex;
-    flex-wrap: wrap;
+    
+     display: flex;
+    flex-wrap: wrap; 
+}
+
+
+.searchField{
+
+   padding-top: 200px;
+   margin-left: 100px;
 }

@@ -1,7 +1,10 @@
-import React from "react";
-import './Navbars/Navbars.css'
+import React, { useState } from "react";
+import '../Navbars/Navbars.css'
 
 const Navbars=()=>{
+
+
+  const [loggedIn,SetLoggedIn]=useState(false)
 
   return(
 
@@ -23,6 +26,19 @@ const Navbars=()=>{
         <li className="items">About</li>
         <li className="items">Contact</li>
         <li className="items">Cart</li>
+
+
+        {loggedIn ? (
+  <li className="items" onClick={() => SetLoggedIn(false)}>
+    logout
+  </li>
+) : (
+  <li className="items" onClick={() => SetLoggedIn(true)}>
+    login
+  </li>
+)}
+
+
       </ul>
 
 

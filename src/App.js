@@ -1,7 +1,9 @@
 
 import './App.css';
 import MainBody from './components/MainBody/MainBody';
-import Navbars from './components/Navbars';
+import Navbars from './components/Navbars/Navbars';
+
+
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
 
       <Navbars/>
       <MainBody/>
+
       
+
+
     </div>
   );
 }
