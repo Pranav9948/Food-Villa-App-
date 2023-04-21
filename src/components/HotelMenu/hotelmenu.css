@@ -1,0 +1,29 @@
+.hotelMenu{
+
+    padding-top: 150px;
+}
+
+
+.hotelMenu img{
+
+   width: 400px;
+   height: 300px;
+   box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+.hotelDesc h1{
+
+    padding-top: 20px;
+}
+
+.hotelDesc h2{
+
+  padding-top: 20px;
+}
+
+
+.hotelDesc h3{
+
+   padding-top: 20px;
+}

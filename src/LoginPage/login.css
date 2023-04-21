@@ -1,0 +1,13 @@
+.loginPage{
+
+    padding-top: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input{
+
+    width: 200%;
+    height: 40px;
+}

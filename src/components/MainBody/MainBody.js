@@ -6,6 +6,7 @@ import Search from "../Search/Search";
 import {SWIGGY_API, swiggy_api_URL} from '../../constants/constant'
 import Shimmer from "../shimmer/Shimmer";
 import SearchFail from "../SearchFail";
+import useOnline from "../../CustomHooks/useOnline";
 
 const MainBody = () => {
 
@@ -39,7 +40,7 @@ console.log("456",restaurantListsApi)
     }
   }
 
-       
+        const online =useOnline()
        
        
  
@@ -60,11 +61,11 @@ console.log("456",restaurantListsApi)
 
         const data=await fetch(SWIGGY_API)
 
-        const json= await data.json()
+        const json= await data?.json()
 
     console.log("123",json);
 
-        const mainData=json.data.success.cards[0].favourite.cards
+        const mainData=json?.data?.success?.cards[0]?.favourite?.cards
 
         setRestaurantListsApi(mainData)
 
@@ -99,7 +100,7 @@ console.log("456",restaurantListsApi)
   
 
    
-     {  restaurantListsApi==="empty" ?  <SearchFail/>:      restaurantListsApi.length >0 ? 
+     {  restaurantListsApi==="empty" ?  <SearchFail/>:      restaurantListsApi?.length >0 ? 
   
 
       
@@ -109,7 +110,7 @@ console.log("456",restaurantListsApi)
       { restaurantListsApi.map((datas) => {
         
 
-        return <RestuarantCard {...datas.data} key={datas.data.parentId}/>;
+        return <RestuarantCard datas={datas} key={datas.data.parentId}/>;
       }) }
 
 

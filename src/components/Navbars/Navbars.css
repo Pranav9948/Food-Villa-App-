@@ -11,7 +11,8 @@
     text-align: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 200px;
+     
+    
 }
 
 
@@ -27,6 +28,7 @@
 .menuItems >ul{
 
     display: flex;
+    list-style: none !important;
    
    
     
@@ -35,10 +37,18 @@
 
 .menuItems >ul >li {
 
-    list-style: none;
-    padding-right: 80px;
+    list-style: none !important;
+    padding-right: 160px !important;
     cursor: pointer;
+    text-decoration: none !important;
+    
     
 
 }
 
+.items{
+
+    text-decoration: none !important;
+    list-style: none !important;
+    padding-right: 70px !important;
+}

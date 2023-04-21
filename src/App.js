@@ -1,22 +1,39 @@
 
 import './App.css';
-import MainBody from './components/MainBody/MainBody';
-import Navbars from './components/Navbars/Navbars';
+import Routers from './Routers';
+import React ,{lazy
+} from 'react';
+
+
+
+  const Cart=lazy(()=>import('./Cart/Cart'))
 
 
 
 function App() {
   return (
     <div className="App">
-
-      <Navbars/>
-      <MainBody/>
-
-      
-
-
+     <Routers/>
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default App;
