@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import '../Navbars/Navbars.css'
 import { Link } from "react-router-dom";
 import useOnline from "../../CustomHooks/useOnline";
 import { useSelector } from "react-redux";
 import store from "../../utils/store";
+import userContext from "../../utils/UserContext";
 
 const Navbars=()=>{
 
@@ -15,6 +16,10 @@ const Navbars=()=>{
   console.log("567",fruits)
 
   const online =useOnline()
+
+  const {name}=useContext(userContext)
+
+  console.log('math',name)
 
  
 
@@ -47,6 +52,12 @@ const Navbars=()=>{
     <Link to={'/contact'} style={{ textDecoration: 'none' }}>
       <li className="items">Contact</li>
     </Link>
+
+ <Link to={'/context'} style={{ textDecoration: 'none' }}>
+      <li className="items">learn context</li>
+    </Link>
+
+
     <Link to={'/cart'} style={{ textDecoration: 'none' }}>
       <li className="items">Cart</li>
     </Link>

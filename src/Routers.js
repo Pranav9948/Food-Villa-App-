@@ -9,6 +9,7 @@ import HotelMenu from './components/HotelMenu/HotelMenu'
 import Login from './LoginPage/Login'
 import Cart from './Cart/Cart'
 import Shimmer from './components/shimmer/Shimmer'
+import Context from './components/context/Context'
 
 
 const Routers = () => {
@@ -86,6 +87,22 @@ const Routers = () => {
             <>
              
             <Contact/>
+           
+            </>
+         
+        }
+      />
+
+
+
+
+<Route
+        path="/context"
+        element={
+        
+            <>
+             
+            <Context/>
            
             </>
          

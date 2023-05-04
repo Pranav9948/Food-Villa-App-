@@ -1,0 +1,20 @@
+.context{
+
+    padding-top: 100px;
+}
+
+.accordian{
+
+    width: 1000px;
+    height: 350px;
+    padding: 60px;
+    border: 3px solid red;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.accordian h1{
+
+    border: 3px solid black;
+    padding: 30px;
+}

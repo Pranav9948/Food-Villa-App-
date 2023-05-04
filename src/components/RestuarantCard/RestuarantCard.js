@@ -6,7 +6,6 @@ import { addItem } from '../../Slices/CartSlice';
 
 const RestuarantCard = ({datas}) => {
 
-  console.log("451",datas)
 
 
     const dispatch=useDispatch()
@@ -19,7 +18,7 @@ const RestuarantCard = ({datas}) => {
              
 
                     
-                  <div className='RestuarantCardz ms-5'>
+                  <div className='RestuarantCardz ms-2'>
                   <div className='cards' keys={datas.data.keys}>
                   <img src={`https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${datas.data.cloudinaryImageId}`} alt='foodImage'  ></img>
 
